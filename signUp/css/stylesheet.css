@@ -1,0 +1,56 @@
+:root{
+    --main-text-color:#17a2b8;
+    --main-background-color:#24353F;
+    --main-transition:.3s;
+}
+body{
+    background-color: var(--main-background-color) !important; 
+}
+/* start Login */
+#Login .container .parent{
+background-color: var(--main-background-color) !important;   
+box-shadow: 0px 5px 45px 16px;
+}
+#Login .container .parent h1 {
+    color: var(--main-text-color);
+}
+#Login .container .parent .inputs{
+    background-color: var(--main-background-color-color);
+    border: 1px solid white;
+    color: var(--main-text-color);
+    box-shadow: none !important;
+    transition: var(--main-transition);
+}
+#Login .container .parent .inputs:hover{
+    border-color: var(--main-text-color);
+}
+#Login .container .parent .inputs::placeholder{
+    color: var(--main-text-color);
+    transition: .5s;
+    opacity: 1;
+}
+#Login .container .parent .inputs:focus::placeholder{
+opacity: 0;
+}
+#Login .container .parent .inputs:placeholder-shown{
+    color: white !important;
+}
+#Login .container .parent button {
+    background-color: var(--main-background-color);
+    border: 1px solid var(--main-text-color);
+    box-shadow: none !important;
+    color: var(--main-text-color);
+    transition: var(--main-transition);
+}
+#Login .container .parent button:hover{
+    background-color: var(--main-text-color);
+    color: white;
+}
+#Login .container .parent p a {
+    transition: var(--main-transition);
+}
+#Login .container .parent p a:hover{
+    text-decoration: underline !important;
+    color: var(--main-text-color) !important;
+}
+/* end Login */
